@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>G:\cocos2d\cocosStudio1.6pro\ResRetris</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>G:\cocos2d\cocosStudio1.6pro\ResRetris\Resources</Resources>
+  <Name>ResRetris</Name>
+  <JsonFileName>ResRetris.json</JsonFileName>
+  <JsonFolder>G:\cocos2d\cocosStudio1.6pro\ResRetris\Json</JsonFolder>
+  <JsonList>
+    <string>GameMove.json</string>
+  </JsonList>
+  <CanvasSize>
+    <Width>750</Width>
+    <Height>1334</Height>
+  </CanvasSize>
+  <filePath>G:\cocos2d\cocosStudio1.6pro\ResRetris\ResRetris.xml.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath />
+  <imageFileList />
+  <imagePngList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>GameMove.json</CurrentUIJson>
+</UIProject>
