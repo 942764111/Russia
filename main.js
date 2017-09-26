@@ -14,9 +14,29 @@ cc.game.onStart = function(){
     flax.init(cc.ResolutionPolicy.FIXED_HEIGHT);
 
   //  cc.view.resizeWithBrowserSize(true);
-    
+
     flax.registerScene("GameBegin", GameBeginScene, res_GameBegin);
     flax.registerScene("GameMove", GameMoveScene, res_GameMove);
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://192.168.188.98:8080/elsfk/index/getTransfer',
+        dataType: "jsonp",
+        async:'false',
+        data: {
+            uid:uid,
+            hid:hid,
+        },
+        success: function (returndata) {
+            if(returndata.code == 200){
+                var tempdata = returndata.data;
+
+            }else{
+            }
+        },
+        error: function (err) {
+        }
+    });
 
     flax.replaceScene("GameMove");
 };

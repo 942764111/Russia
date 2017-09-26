@@ -20,15 +20,36 @@
     </style>
 </head>
 <body style="padding:0; margin: 0;">
+<script src="src/jquery-2.2.1.min.js"></script>
 <script>
-    var UID = '106184';
-    var TOKEN = 'a74d8327ac0d4a9f56f2cb019fe43d36';
 
-//var UID = '100012';
-//var TOKEN = 'f0c54a68bd8fa18505c586025b5c2104';
+    //获取url中的参数
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+    var uid = getUrlParam('uid');
+    var hid = getUrlParam('hid');
+</script>
 
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_m"></div>
+<script>
+    var jiathis_config = {
+        boldNum:0,
+        siteNum:7,
+        showClose:false,
+        url:"http://www.jiathis.com",
+        title:"自定义TITLE #微博话题#",
+    }
 
 </script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8">
+
+</script>
+<!-- JiaThis Button END -->
+
 <script src="res/loading.js"></script>
 <!--<script src="http://qlbuy-img.qlifeapp.com/newpoker/res/loading.js"></script>-->
 <canvas id="gameCanvas" width="750" height="1334"></canvas>
